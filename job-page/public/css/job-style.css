@@ -63,7 +63,7 @@ a,a:active,a:visited{}
 
 
 .icon,.interview article ul li ul li{background-image:url(images/job-script.png);background-repeat:no-repeat;}
-.interview{margin:0 auto;width:900px;background:url("images/job-bg-wood.png") repeat scroll 0 0 transparent;font-size:13px;line-height:20px;color:#666;text-shadow:1px 1px 1px #FFFFFF;}
+.interview{margin:0 auto;width:900px;background:url("images/job-bg-wood.png") repeat scroll 0 0 #fff;font-size:13px;line-height:20px;color:#666;text-shadow:1px 1px 1px #FFFFFF;}
 .interview header{margin-top:70px;}
 .interview header .title{background:url("images/job-bg-menu.png") repeat-x scroll 0 0 transparent;border-radius:5px 5px 0 0;box-shadow:0 2px 5px rgba(0,0,0,0.8);color:#FFFFFF;font-size:23px;height:50px;letter-spacing:9px;line-height:42px;text-align:center;text-shadow:1px 1px 1px #000000;}
 .interview article{position:relative;background:url("images/job-bg-body.png") repeat scroll 12px 0 transparent;box-shadow:0 2px 5px rgba(0,0,0,0.8);}
