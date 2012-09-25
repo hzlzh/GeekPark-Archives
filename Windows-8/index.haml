@@ -1,0 +1,175 @@
+!!! 5
+%html{'lang' => 'zh-CN'}
+  %head
+    %meta{'charset' => 'UTF-8'}/
+    %title Windows 8
+    %meta{:name => "keywords", :content  => "Windows 8"}
+    %meta{:name => "description", :content  => "Windows 8"}
+    %link{:rel => "shortcut icon", :href  => "favicon.ico"}
+    %link{:rel => "stylesheet", :href  => "css/style.css"}
+    %script{:src  => "js/jquery-1.8.1.min.js"}
+    %script{:src  => "js/modernizr.js"}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-xxxxxxx-xx']);
+      _gaq.push(['_trackPageview']);
+  
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  %body
+    %header.header
+      .top-box
+        %h1
+          %a{:href => "/",:title => "价值传媒技术中心"}
+            %span.logo.icons 价值传媒技术中心
+        %form#searchform{:action => "/", :method => "post"}
+          <input id="s" name="q" type="text" value="" placeholder="搜索">
+          <input type="submit" class="icons" value="搜索" id="searchsubmit">
+      %nav.menu
+        %ul
+          %li
+            %a{:href => "index.html"}
+              %span.current 文档中心
+          %li
+            %a{:href => "/"}
+              %span 技术团队
+          %li
+            %a{:href => "/"}
+              %span 实习生
+          %li.login-item
+            %a{:href => "login.html"}
+              %span 登录
+    .breadcrumb
+      %ul
+        %li.home
+          %a{:href => "index.html"}
+            %span.icons 
+              %i.icons
+        %li
+          %a{:href => "/"}
+            %span.icons 文档管理
+        %li.current
+          %a{:href => "/"}
+            %span.icons 全部文档
+    .container
+      .content-box
+        .content
+          %h2.title 全部文档
+          .content-body
+            %ul.ticket-list
+              %li
+                .detail
+                  %a{:href => "post.html"}
+                    .title 大数据会banner制作需求
+                  .meta 
+                    创建于: 
+                    %a{:href => "/"}
+                      %span.create-time 2012-12-11 12:12 
+                    \ / 分类: 
+                    %a{:href => "/"}
+                      %span 极客公园
+                .date
+                  %a{:href => "/"}
+                    最后更新: 2012.12.11 13:12
+              %li
+                .detail
+                  %a{:href => "post.html"}
+                    .title 大数据会banner制作需求
+                  .meta 
+                    创建于: 
+                    %a{:href => "/"}
+                      %span.create-time 2012-12-11 12:12 
+                    \ / 分类: 
+                    %a{:href => "/"}
+                      %span 极客公园
+                .date
+                  %a{:href => "/"}
+                    最后更新: 2012.12.11 13:12
+              %li
+                .detail
+                  %a{:href => "post.html"}
+                    .title 大数据会banner制作需求
+                  .meta 
+                    创建于: 
+                    %a{:href => "/"}
+                      %span.create-time 2012-12-11 12:12 
+                    \ / 分类: 
+                    %a{:href => "/"}
+                      %span 极客公园
+                .date
+                  %a{:href => "/"}
+                    最后更新: 2012.12.11 13:12
+              %li
+                .detail
+                  %a{:href => "/"}
+                    .title 大数据会banner制作需求
+                  .meta 
+                    创建于: 
+                    %a{:href => "/"}
+                      %span.create-time 2012-12-11 12:12 
+                    \ / 分类: 
+                    %a{:href => "/"}
+                      %span 极客公园
+                .date
+                  %a{:href => "/"}
+                    最后更新: 2012.12.11 13:12
+              %li
+                .detail
+                  %a{:href => "/"}
+                    .title 大数据会banner制作需求
+                  .meta 
+                    创建于: 
+                    %a{:href => "/"}
+                      %span.create-time 2012-12-11 12:12 
+                    \ / 分类: 
+                    %a{:href => "/"}
+                      %span 极客公园
+                .date
+                  %a{:href => "/"}
+                    最后更新: 2012.12.11 13:12
+        .page_navi
+          %ul
+            %li
+              %a{:href => "/"}
+                %span « 返回列表
+            %li.current
+              %a{:href => "/"}
+                %span 1
+            %li
+              %a{:href => "/"}
+                %span 2
+            %li
+              %a{:href => "/"}
+                %span 3
+            %li
+              %span ...
+            %li
+              %a{:href => "/"}
+                %span 23
+            %li
+              %a{:href => "/"}
+                %span 下一页 »
+      .sidebar
+        %h3.title 文档中心
+        %ul
+          %li.icons
+            %a{:href => "/"}
+              %span 全部文档
+          %li.icons
+            %a{:href => "/"}
+              %span 极客公园文档
+          %li.icons
+            %a{:href => "/"}
+              %span ITValue文档
+          %li.icons
+            %a{:href => "/"}
+              %span 商业价值客户端文档
+          %li.icons
+            %a{:href => "/"}
+              %span 其他文档
+    %footer.footer
+      .copyright Copyright &copy;  2009 - 2012 北京文德致远文化传播有限公司
+    %script{:src  => "js/script.js"}  
