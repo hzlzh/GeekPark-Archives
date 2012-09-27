@@ -6,170 +6,403 @@
     %meta{:name => "keywords", :content  => "Windows 8"}
     %meta{:name => "description", :content  => "Windows 8"}
     %link{:rel => "shortcut icon", :href  => "favicon.ico"}
-    %link{:rel => "stylesheet", :href  => "css/style.css"}
+    %link{:rel => "stylesheet", :href  => "css/windows-8.css"}
     %script{:src  => "js/jquery-1.8.1.min.js"}
     %script{:src  => "js/modernizr.js"}
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-xxxxxxx-xx']);
-      _gaq.push(['_trackPageview']);
-  
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-  %body
-    %header.header
-      .top-box
-        %h1
-          %a{:href => "/",:title => "价值传媒技术中心"}
-            %span.logo.icons 价值传媒技术中心
-        %form#searchform{:action => "/", :method => "post"}
-          <input id="s" name="q" type="text" value="" placeholder="搜索">
-          <input type="submit" class="icons" value="搜索" id="searchsubmit">
-      %nav.menu
+  %body.windows-8
+    .windows-8-box
+      .banner-box
+        %a{:href => "/"}
+          %span.win-8-logo.icons Windows 8 完全手册
+      .title-box
+        .title-box-l
+          .description
+            %h2 
+              %i.heart.icons
+              关于此手册：
+            .text 崭新的用户交互、崭新的平台战略，无论成败，Windows 8 必将成为微软 Windows 史上最大的变革和冒险。本手册将为您扫清迷雾，全面解读 Windows 8 的特性与体验。从 Metro UI 与传统桌面的杂合到触摸优化的操作体验，到移动为中心的功能体验，以及更多大大小小的功能特性，我们将解析微软新一代操作系统 Windows 8 背后的故事。
+          .author
+            %h2
+              %i.heart.icons
+              关于作者
+            .text
+              .author-avatar.icons
+              .author-info
+                董 超-
+                %a{:href => "/"} Afio
+              .author-des 极客公园资深编辑，Windows 深度用户。全程关注 Windows 8 DP 版、CP 版、RP 版、RTM 版、正式版的进化历程，对 Windows 8 有深刻的见解。
+        .title-box-r
+          .share-to
+            .share-text 您可以分享到：
+            %ul
+              %li
+                %a.tencent-weibo.icons{:href => "/"} 腾讯微博
+              %li
+                %a.twitter.icons{:href => "/"} Twitter
+              %li
+                %a.gplus.icons{:href => "/"} Google+
+              %li
+                %a.weibo.icons{:href => "/"} 新浪微博
+          .thumb-img.icons
+        %i.copyright-mark.icons  极客公园出品
+        %i.right-top-line
+        %i.left-bottom-line
+      .list-box
         %ul
           %li
-            %a{:href => "index.html"}
-              %span.current 文档中心
+            %ul
+              %li.title
+                %i.li-1.icons
+                %a{:href => "/"} 专题前言
+              %li
+                %a{:href => "/"} 什么是 Windows 8 ？
+              %li
+                %a{:href => "/"} Windows 8 的地位
+              %li
+                %a{:href => "/"} Windows 8 重要历史开发版本
           %li
-            %a{:href => "/"}
-              %span 技术团队
+            %ul
+              %li.title
+                %i.li-2.icons
+                %a{:href => "/"} Windows 8 安装、更新与激活
+              %li
+                %a{:href => "/"} Windows 8 版本
+              %li
+                %a{:href => "/"} Windows 8 配置要求
+              %li
+                %a{:href => "/"} Windows 8 安装与升级
+              %li
+                %a{:href => "/"} Windows 8 更新与升级
+              %li
+                %a{:href => "/"} Windows 8 激活
           %li
-            %a{:href => "/"}
-              %span 实习生
-          %li.login-item
-            %a{:href => "login.html"}
-              %span 登录
-    .breadcrumb
-      %ul
-        %li.home
-          %a{:href => "index.html"}
-            %span.icons 
-              %i.icons
-        %li
-          %a{:href => "/"}
-            %span.icons 文档管理
-        %li.current
-          %a{:href => "/"}
-            %span.icons 全部文档
-    .container
-      .content-box
-        .content
-          %h2.title 全部文档
-          .content-body
-            %ul.ticket-list
+            %ul
+              %li.title
+                %i.li-3.icons
+                %a{:href => "/"} Windows 8 界面细述
               %li
-                .detail
-                  %a{:href => "post.html"}
-                    .title 大数据会banner制作需求
-                  .meta 
-                    创建于: 
-                    %a{:href => "/"}
-                      %span.create-time 2012-12-11 12:12 
-                    \ / 分类: 
-                    %a{:href => "/"}
-                      %span 极客公园
-                .date
-                  %a{:href => "/"}
-                    最后更新: 2012.12.11 13:12
+                %a{:href => "/"} 从“桌面”到”Metro/Modern“
               %li
-                .detail
-                  %a{:href => "post.html"}
-                    .title 大数据会banner制作需求
-                  .meta 
-                    创建于: 
-                    %a{:href => "/"}
-                      %span.create-time 2012-12-11 12:12 
-                    \ / 分类: 
-                    %a{:href => "/"}
-                      %span 极客公园
-                .date
-                  %a{:href => "/"}
-                    最后更新: 2012.12.11 13:12
+                %a{:href => "/"} 从 Windows 7 到 Windows 8
               %li
-                .detail
-                  %a{:href => "post.html"}
-                    .title 大数据会banner制作需求
-                  .meta 
-                    创建于: 
-                    %a{:href => "/"}
-                      %span.create-time 2012-12-11 12:12 
-                    \ / 分类: 
-                    %a{:href => "/"}
-                      %span 极客公园
-                .date
-                  %a{:href => "/"}
-                    最后更新: 2012.12.11 13:12
+                %a{:href => "/"} Aero UI
               %li
-                .detail
-                  %a{:href => "/"}
-                    .title 大数据会banner制作需求
-                  .meta 
-                    创建于: 
-                    %a{:href => "/"}
-                      %span.create-time 2012-12-11 12:12 
-                    \ / 分类: 
-                    %a{:href => "/"}
-                      %span 极客公园
-                .date
-                  %a{:href => "/"}
-                    最后更新: 2012.12.11 13:12
+                %a{:href => "/"} Metro/Modern UI
               %li
-                .detail
-                  %a{:href => "/"}
-                    .title 大数据会banner制作需求
-                  .meta 
-                    创建于: 
-                    %a{:href => "/"}
-                      %span.create-time 2012-12-11 12:12 
-                    \ / 分类: 
-                    %a{:href => "/"}
-                      %span 极客公园
-                .date
-                  %a{:href => "/"}
-                    最后更新: 2012.12.11 13:12
-        .page_navi
-          %ul
-            %li
-              %a{:href => "/"}
-                %span « 返回列表
-            %li.current
-              %a{:href => "/"}
-                %span 1
-            %li
-              %a{:href => "/"}
-                %span 2
-            %li
-              %a{:href => "/"}
-                %span 3
-            %li
-              %span ...
-            %li
-              %a{:href => "/"}
-                %span 23
-            %li
-              %a{:href => "/"}
-                %span 下一页 »
-      .sidebar
-        %h3.title 文档中心
-        %ul
-          %li.icons
-            %a{:href => "/"}
-              %span 全部文档
-          %li.icons
-            %a{:href => "/"}
-              %span 极客公园文档
-          %li.icons
-            %a{:href => "/"}
-              %span ITValue文档
-          %li.icons
-            %a{:href => "/"}
-              %span 商业价值客户端文档
-          %li.icons
-            %a{:href => "/"}
-              %span 其他文档
-    %footer.footer
-      .copyright Copyright &copy;  2009 - 2012 北京文德致远文化传播有限公司
-    %script{:src  => "js/script.js"}  
+                %a{:href => "/"} UEFI 界面
+              %li
+                %a{:href => "/"} Ribbon 界面
+              %li
+                %a{:href => "/"} 沉浸式界面
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-4.icons
+                %a{:href => "/"} Windows 8 初始界面和功能
+              %li
+                %a{:href => "/"} Windows 8 锁屏/智能屏幕
+              %li
+                %a{:href => "/"} Windows 8 Charm 菜单/超级按钮
+              %li
+                %a{:href => "/"} Windows 8 传统桌面
+          %li
+            %ul
+              %li.title
+                %i.li-5.icons
+                %a{:href => "/"} Windows 8 操作全解
+              %li
+                %a{:href => "/"} 唤出"超级按钮"
+              %li
+                %a{:href => "/"} 界面切换
+              %li
+                %a{:href => "/"} Metro/Modern 界面放大/缩小
+              %li
+                %a{:href => "/"} Metro/Modern 应用贴靠
+              %li
+                %a{:href => "/"} Metro/Modern 应用切换
+              %li
+                %a{:href => "/"} Metro/Modern 应用关闭
+              %li
+                %a{:href => "/"} Windows 8 关机
+              %li
+                %a{:href => "/"} Windows 8 平板交互指南
+          %li
+            %ul
+              %li.title
+                %i.li-6.icons
+                %a{:href => "/"} Windows 8 新搜索
+              %li
+                %a{:href => "/"} 在 Windows 8 中进行搜索
+              %li
+                %a{:href => "/"} Windows 8 搜索设置
+              %li
+                %a{:href => "/"} Windows 8 搜索快捷键
+              %li
+                %a{:href => "/"} 搜索功能的另类需求
+              %li
+                %a{:href => "/"} 文件资源管理器中的搜索
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-7.icons
+                %a{:href => "/"} Windows 8 应用贴靠与协同
+              %li
+                %a{:href => "/"} Win RT 最大特色：应用贴靠
+              %li
+                %a{:href => "/"} 应用贴靠介绍
+              %li
+                %a{:href => "/"} 应用贴靠示例（截图）
+              %li
+                %a{:href => "/"} 应用贴靠演示（视频）
+              %li
+                %a{:href => "/"} Windows 8 最大特色：应用协同
+          %li
+            %ul
+              %li.title
+                %i.li-8.icons
+                %a{:href => "/"} Windows 8 设置与共享
+              %li
+                %a{:href => "/"} Windows 8 Metro 设置
+              %li
+                %a{:href => "/"} Windows 8 共享
+          %li
+            %ul
+              %li.title
+                %i.li-9.icons
+                %a{:href => "/"} Windows 应用商店揭秘
+              %li
+                %a{:href => "/"} Windows 应用商店是什么？
+              %li
+                %a{:href => "/"} Windows 应用商店的地位
+              %li
+                %a{:href => "/"} Windows 应用商店界面
+              %li
+                %a{:href => "/"} Metro/Modern 应用主页
+              %li
+                %a{:href => "/"} 安装和购买 Metro/Modern 应用
+              %li
+                %a{:href => "/"} Metro/Modern 应用管理（卸载）和同步
+              %li
+                %a{:href => "/"} 结语
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-10.icons
+                %a{:href => "/"} Windows Metro/Modern 官方应用
+              %li
+                %a{:href => "/"} 什么是 Metro/Modern 应用？
+              %li
+                %a{:href => "/"} 一. Live 系列
+              %li
+                %a{:href => "/"} 二. 多媒体系列
+              %li
+                %a{:href => "/"} 三. Bing 系列
+              %li
+                %a{:href => "/"} 四. 效率系列
+              %li
+                %a{:href => "/"} 五. 游戏系列
+              %li
+                %a{:href => "/"} 结语
+          %li
+            %ul
+              %li.title
+                %i.li-11.icons
+                %a{:href => "/"} 第三方 Metro/Modern 应用
+              %li
+                %a{:href => "/"} 暂未定
+          %li
+            %ul
+              %li.title
+                %i.li-12.icons
+                %a{:href => "/"} Windows 8 文件资源管理器
+              %li
+                %a{:href => "/"} 从“资源管理器”到“文件管理器”
+              %li
+                %a{:href => "/"} 功能区的更改
+              %li
+                %a{:href => "/"} 功能改进
+              %li
+                %a{:href => "/"} 界面改进
+              %li
+                %a{:href => "/"} 其他改进
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-13.icons
+                %a{:href => "/"} Internet Explorer 10
+              %li
+                %a{:href => "/"} 前言
+              %li
+                %a{:href => "/"} 从辉煌走向没落的 Internet Explorer
+              %li
+                %a{:href => "/"} Windows 8 传统桌面
+              %li
+                %a{:href => "/"} 重新开始重视 Internet Explorer 的微软
+              %li
+                %a{:href => "/"} 桌面版 IE 10
+              %li
+                %a{:href => "/"} 桌面版 IE 10 特性
+              %li
+                %a{:href => "/"} Metro/Modern Style IE 10
+              %li
+                %a{:href => "/"} Metro/Modern Style IE 10 特性
+              %li
+                %a{:href => "/"} 结语
+          %li
+            %ul
+              %li.title
+                %i.li-14.icons
+                %a{:href => "/"} Windows 8 任务管理器
+              %li
+                %a{:href => "/"} 任务管理器（简略模式）
+              %li
+                %a{:href => "/"} 任务管理器（详细模式）
+          %li
+            %ul
+              %li.title
+                %i.li-15.icons
+                %a{:href => "/"} New Microsoft Office
+              %li
+                %a{:href => "/"} 界面改进
+              %li
+                %a{:href => "/"} 从本地到在线
+              %li
+                %a{:href => "/"} 从工具到服务
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-16.icons
+                %a{:href => "/"} Skydrive
+              %li
+                %a{:href => "/"} 最近使用文档
+              %li
+                %a{:href => "/"} “Fetch”远程获取
+              %li
+                %a{:href => "/"} 关联 Office
+          %li
+            %ul
+              %li.title
+                %i.li-17.icons
+                %a{:href => "/"} 微软拼音输入法
+              %li
+                %a{:href => "/"} 从智能ABC到拼音输入法
+              %li
+                %a{:href => "/"} 英库输入法
+          %li
+            %ul
+              %li.title
+                %i.li-18.icons
+                %a{:href => "/"} Windows 8 附件工具
+              %li
+                %a{:href => "/"} Windows 日记本
+              %li
+                %a{:href => "/"} Windows 数学输入板
+              %li
+                %a{:href => "/"} 写字板和记事本
+              %li
+                %a{:href => "/"} 其他
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-19.icons
+                %a{:href => "/"} 解读 Windows 8 新功能
+              %li
+                %a{:href => "/"} 新混合启动
+              %li
+                %a{:href => "/"} Hyper-V
+              %li
+                %a{:href => "/"} 新登陆方式
+              %li
+                %a{:href => "/"} Windows to Go
+              %li
+                %a{:href => "/"} 新的文件系统 ReFS
+              %li
+                %a{:href => "/"} 虚拟光驱/虚拟硬盘技术
+              %li
+                %a{:href => "/"} 刷新与重置
+              %li
+                %a{:href => "/"} 文件历史纪录
+          %li
+            %ul
+              %li.title
+                %i.li-20.icons
+                %a{:href => "/"} Windows 8 安全功能
+              %li
+                %a{:href => "/"} 前言
+              %li
+                %a{:href => "/"} Windows Defender：从小受到小攻
+              %li
+                %a{:href => "/"} SmartScreen：从 IE 8 到 Windows 8
+              %li
+                %a{:href => "/"} Family Safety：从 Live Essastional 到 Microsoft
+          %li
+            %ul
+              %li.title
+                %i.li-21.icons
+                %a{:href => "/"} Windows 8 技巧
+              %li
+                %a{:href => "/"} 重新开启删除确认对话框
+              %li
+                %a{:href => "/"} 自动保存截图
+              %li
+                %a{:href => "/"} 让 Hyper-V 和 VMware 虚拟机软件共存
+              %li
+                %a{:href => "/"} 以管理员身份运行
+              %li
+                %a{:href => "/"} 修改文件权限
+              %li
+                %a{:href => "/"} 制作 Windows to Go
+              %li
+                %a{:href => "/"} 无需密码直接登陆系统
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-22.icons
+                %a{:href => "/"} Windows 8 账户
+              %li
+                %a{:href => "/"} Microsoft 账户
+              %li
+                %a{:href => "/"} 用户帐户
+              %li
+                %a{:href => "/"} Windows 设置同步
+          %li
+            %ul
+              %li.title
+                %i.li-23.icons
+                %a{:href => "/"} Windows 8 平板
+              %li
+                %a{:href => "/"} 暂未确定1
+              %li
+                %a{:href => "/"} 暂未确定2
+              %li
+                %a{:href => "/"} 暂未确定3
+          %li
+            %ul
+              %li.title
+                %i.li-24.icons
+                %a{:href => "/"} 暂未确定
+              %li
+                %a{:href => "/"} 暂未确定4
+              %li
+                %a{:href => "/"} 暂未确定5
+              %li
+                %a{:href => "/"} 暂未确定6
+          %li.b-line
+          %li
+            %ul
+              %li.title
+                %i.li-25.icons
+                %a{:href => "/"} Windows 8 小结
+              %li
+                %a{:href => "/"} 使用小结
+              %li
+                %a{:href => "/"} 微软糅合PC 操作系有和平板操作系统的另类解读
+              %li
+                %a{:href => "/"} Windows 8 会成为一款成功的操作系统吗？

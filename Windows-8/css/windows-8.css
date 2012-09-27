@@ -1,0 +1,696 @@
+/*
+@name: Windows 8 page
+@author:Andy Huang(andyahung@geekpark.net)
+*/
+/* HTML5 ✰ Boilerplate */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+body {
+  font-family: "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+}
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+select,
+input,
+textarea,
+button {
+  font: 99% sans-serif;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+html {
+  overflow-y: auto;
+}
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+}
+ol {
+  list-style-type: decimal;
+}
+li {
+  list-style: none;
+}
+nav ul,
+nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+small {
+  font-size: 85%;
+  font-size: 12px;
+}
+strong,
+th {
+  font-weight: bold;
+}
+td {
+  vertical-align: top;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+textarea {
+  overflow: auto;
+}
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+button {
+  width: auto;
+  overflow: visible;
+}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+body,
+select,
+input,
+textarea {
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.windows-8 #footer {
+  border-top: 1px solid #DDDDDD;
+}
+.windows-8 #footer .container {
+  border-top: none;
+}
+.windows-8-box {
+  font-size: 14px;
+  line-height: 22px;
+  color: #505050;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.windows-8-box .icons,
+.windows-8-box .list-box ul li ul li {
+  background-image: url(images/sprite.png);
+  background-repeat: no-repeat;
+  text-indent: -999px;
+}
+.windows-8-box .copyright-mark {
+  background-position: -245px -40px;
+  display: inline-block;
+  width: 102px;
+  height: 91px;
+}
+.windows-8-box .author-avatar {
+  background-position: -25px -64px;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+}
+.windows-8-box .gplus {
+  background-position: -366px 0px;
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+}
+.windows-8-box .gplus:hover {
+  background-position: -366px -40px;
+}
+.windows-8-box .heart {
+  background-position: -369px -93px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .tencent-weibo {
+  background-position: -401px 0px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.windows-8-box .tencent-weibo:hover {
+  background-position: -401px -40px;
+}
+.windows-8-box .thumb-img {
+  background-position: 0px -145px;
+  display: inline-block;
+  height: 190px;
+  width: 266px;
+}
+.windows-8-box .twitter {
+  background-position: -435px 0px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.windows-8-box .twitter:hover {
+  background-position: -435px -40px;
+}
+.windows-8-box .weibo {
+  background-position: -470px 0px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.windows-8-box .weibo:hover {
+  background-position: -470px -40px;
+}
+.windows-8-box .win-8-logo {
+  background-position: 0px 0px;
+  display: inline-block;
+  width: 330px;
+  height: 38px;
+}
+.windows-8-box .li-1 {
+  background-position: 0px 0px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-2 {
+  background-position: 0px -30px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-3 {
+  background-position: 0px -60px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-4 {
+  background-position: 0px -90px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-5 {
+  background-position: 0px -120px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-6 {
+  background-position: 0px -150px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-7 {
+  background-position: 0px -180px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-8 {
+  background-position: 0px -210px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-9 {
+  background-position: 0px -240px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-10 {
+  background-position: 0px -270px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-11 {
+  background-position: 0px -300px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-12 {
+  background-position: 0px -330px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-13 {
+  background-position: 0px -360px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-14 {
+  background-position: 0px -390px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-15 {
+  background-position: 0px -420px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-16 {
+  background-position: 0px -450px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-17 {
+  background-position: 0px -480px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-18 {
+  background-position: 0px -510px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-19 {
+  background-position: 0px -540px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-20 {
+  background-position: 0px -570px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-21 {
+  background-position: 0px -600px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-22 {
+  background-position: 0px -630px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-23 {
+  background-position: 0px -660px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-24 {
+  background-position: 0px -690px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .li-25 {
+  background-position: 0px -720px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.windows-8-box .banner-box {
+  margin: 28px 0 19px;
+}
+.windows-8-box .title-box {
+  border: 1px solid #E5E4E4;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.windows-8-box .title-box .title-box-l {
+  float: left;
+  width: 702px;
+}
+.windows-8-box .title-box .title-box-l h2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 6px 0 6px 40px;
+  position: relative;
+}
+.windows-8-box .title-box .title-box-l h2 i.heart {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.windows-8-box .title-box .title-box-l .description .text {
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+.windows-8-box .title-box .title-box-l .description .text p {
+  text-indent: 27px;
+  margin-bottom: 10px;
+}
+.windows-8-box .title-box .title-box-l .author {
+  margin-top: 10px;
+}
+.windows-8-box .title-box .title-box-l .author .text {
+  overflow: hidden;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+.windows-8-box .title-box .title-box-l .author .text .author-avatar {
+  float: left;
+}
+.windows-8-box .title-box .title-box-l .author .text .author-info {
+  margin-left: 70px;
+}
+.windows-8-box .title-box .title-box-l .author .text .author-info a {
+  color: #00bdf2;
+}
+.windows-8-box .title-box .title-box-l .author .text .author-des {
+  line-height: 20px;
+  margin-top: 5px;
+  margin-left: 70px;
+  color: #00bdf2;
+}
+.windows-8-box .title-box .title-box-r {
+  float: right;
+  overflow: hidden;
+  width: 265px;
+}
+.windows-8-box .title-box .title-box-r .share-to {
+  overflow: hidden;
+  margin-right: -10px;
+  margin-top: 10px;
+}
+.windows-8-box .title-box .title-box-r .share-to .share-text {
+  font-size: 12px;
+  color: #c6c6c6;
+  float: left;
+  margin-top: 5px;
+}
+.windows-8-box .title-box .title-box-r .share-to ul {
+  overflow: hidden;
+  float: right;
+}
+.windows-8-box .title-box .title-box-r .share-to ul li {
+  float: left;
+  margin-right: 10px;
+}
+.windows-8-box .title-box .title-box-r .share-to ul li a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+.windows-8-box .title-box .title-box-r .thumb-img {
+  margin-top: 30px;
+  float: right;
+}
+.windows-8-box .title-box .copyright-mark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.windows-8-box .title-box .right-top-line {
+  width: 100px;
+  height: 3px;
+  top: 0;
+  right: 0;
+  background-color: #18C3EA;
+  display: block;
+  position: absolute;
+}
+.windows-8-box .title-box .left-bottom-line {
+  width: 3px;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  background-color: #18C3EA;
+  display: block;
+  position: absolute;
+}
+.windows-8-box .list-box {
+  margin-top: 60px;
+}
+.windows-8-box .list-box ul {
+  overflow: hidden;
+}
+.windows-8-box .list-box ul li {
+  float: left;
+  width: 33.3%;
+}
+.windows-8-box .list-box ul li ul {
+  overflow: hidden;
+}
+.windows-8-box .list-box ul li ul li {
+  margin-left: 10px;
+  padding: 3px 0 3px 20px;
+  background-position: -505px -148px;
+  text-indent: 0;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.windows-8-box .list-box ul li ul li a {
+  color: #505050;
+  text-decoration: none;
+}
+.windows-8-box .list-box ul li ul li a:hover {
+  color: #00bdf2;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.windows-8-box .list-box ul li ul li.title {
+  font-weight: bolder;
+  padding: 7px 0 7px 45px;
+  position: relative;
+  background: none;
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+.windows-8-box .list-box ul li ul li.title i {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-image: url(images/li.png);
+}
+.windows-8-box .list-box ul li ul li.title a {
+  border-bottom: none;
+}
+.windows-8-box .list-box ul li.b-line {
+  width: 100%;
+  margin: 20px 0;
+  border-bottom: 1px solid #E5E4E4;
+}
