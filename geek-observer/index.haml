@@ -1,0 +1,70 @@
+!!! 5
+%html{'lang' => 'zh-CN'}
+  %head
+    %meta{'charset' => 'UTF-8'}/
+    %title GeekPark 产品观察家
+    %meta{:name => "keywords", :content  => "GeekPark, 产品观察家"}
+    %meta{:name => "description", :content  => "GeekPark 产品观察家"}
+    %link{:rel => "shortcut icon", :href  => "favicon.ico"}
+    %link{:rel => "stylesheet", :href  => "css/observer.css"}
+    %script{:src  => "js/jquery-1.8.1.min.js"}
+    %script{:src  => "js/modernizr.js"}
+  %body.observer.is-login
+    .observer-box
+      .banner-box
+        %a{:href => "/"}
+          %span.win-8-logo.icons GeekPark 产品观察家
+      .list-box
+        %ul
+          %li
+            .des
+              .title 每一个创新产品的光辉都应得到荣耀，而您可能就是把荣誉带给产品的那个人！极客公园需要一批靠谱的产品观察家。
+              .content 极客公园是一个面向互联网产品人的社区，无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；我们也不写一个人是谁，因为地球上有维基百科。极客公园关注的，是产品背后的“为什么”。
+      .text-box
+        %ul
+          %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      .form-box
+        %form
+          .control-group
+            %label 网络常用ID:
+            .controls
+              <input type="text" name="pen_name" value="" />
+          .control-group
+            %label 姓名:
+            .controls
+              <input type="text" name="real_name" value="<?php echo $user_data->real_name?>" />
+          .control-group
+            %label 个人主页/博客:
+            .controls
+              <input type="text" name="blog" value="<?php echo $user_data->blog?>" />
+          .control-group
+            %label 公司:
+            .controls
+              <input type="text" name="company" value="<?php echo $user_data->company?>" />
+          .control-group
+            %label 职位:
+            .controls
+              <input type="text" name="position" value="<?php echo $user_data->position?>" />
+          .control-group
+            %label 参与过的产品:
+            .controls
+              <input type="text" name="product" value="<?php echo $user_product?>" />
+          .control-group
+            %label 微博URL:
+            .controls
+              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+          .control-group
+            %label 微博URL:
+            .controls
+              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+          .control-group
+            %label 手机:
+            .controls
+              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+          .control-group
+            %label 个人介绍:
+            .controls
+              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+          .control-group
+            .controls
+              <button class="btn" type="submit">Submit</button>
