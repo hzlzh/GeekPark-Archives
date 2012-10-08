@@ -1,4 +1,4 @@
-<MKM version="2.0" imageFileUrl="file:///Users/hzlzh/Project/hzlzh/Windows-8/Design/windows%208.psd">
+<MKM version="2.0" imageFileUrl="file:///Users/hzlzh/Project/hzlzh/geekpark.net/Windows-8/Design/windows-8.psd">
   <Marks>
     <LengthMark direction="3" color="16711680" length="28" x="942" y="46"/>
     <LengthMark direction="12" color="16711680" length="181" x="730" y="77"/>
@@ -9,7 +9,7 @@
     <LengthMark direction="3" color="16711680" length="10" x="752" y="132"/>
     <LengthMark direction="3" color="16711680" length="10" x="752" y="168"/>
     <LengthMark direction="12" color="16711680" length="10" x="728" y="154"/>
-    <LengthMark direction="12" color="16711680" length="3" x="729" y="352"/>
+    <LengthMark direction="12" color="16711680" length="3" x="699" y="348"/>
     <LengthMark direction="3" color="16711680" length="50" x="775" y="310"/>
     <LengthMark direction="12" color="16711680" length="50" x="776" y="332"/>
     <LengthMark direction="12" color="16711680" length="43" x="1398" y="209"/>
@@ -24,7 +24,18 @@
     <LengthMark direction="12" color="16711680" length="15" x="1068" y="509"/>
     <LengthMark direction="3" color="16711680" length="20" x="744" y="483"/>
     <LengthMark direction="3" color="16711680" length="24" x="1450" y="699"/>
-    <LengthMark direction="12" color="16711680" length="961" x="708" y="723"/>
+    <LengthMark direction="12" color="16711680" length="961" x="713" y="933"/>
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15066597" offsetX="25" offsetY="10" x="1368" y="2993"/>
+    <LengthMark direction="3" color="16711680" length="212" x="729" y="132"/>
+    <LengthMark direction="3" color="16711680" length="253" x="732" y="132"/>
+    <LengthMark direction="12" color="16711680" length="865" x="728" y="133"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15066340" offsetX="25" offsetY="10" x="1682" y="385"/>
+    <LengthMark direction="12" color="16711680" length="712" x="690" y="260"/>
+    <LengthMark direction="12" color="16711680" length="15" x="1540" y="157"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="1623018" offsetX="25" offsetY="10" x="902" y="104"/>
+    <LengthMark direction="12" color="16711680" length="273" x="1421" y="190"/>
+    <LengthMark direction="12" color="16711680" length="46" x="728" y="210"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13027014" offsetX="25" offsetY="10" x="1423" y="153"/>
+    <LengthMark direction="3" color="16711680" length="20" x="1418" y="287"/>
   </Marks>
 </MKM>
