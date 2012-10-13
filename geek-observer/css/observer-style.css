@@ -1,0 +1,656 @@
+/*
+@name: GeekPark 产品观察家
+@author: hzlzh(hlzh.dev@gmail.com)
+*/
+/* HTML5 ✰ Boilerplate */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+body {
+  font-family: "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+}
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+select,
+input,
+textarea,
+button {
+  font: 99% sans-serif;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+html {
+  overflow-y: auto;
+}
+a:hover,
+a:active {
+  outline: none;
+}
+ul,
+ol {
+  margin: 0;
+}
+ol {
+  list-style-type: decimal;
+}
+li {
+  list-style: none;
+}
+nav ul,
+nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+small {
+  font-size: 85%;
+  font-size: 12px;
+}
+strong,
+th {
+  font-weight: bold;
+}
+td {
+  vertical-align: top;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+textarea {
+  overflow: auto;
+}
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+button {
+  width: auto;
+  overflow: visible;
+}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+body,
+select,
+input,
+textarea {
+  color: #444;
+  resize: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.observer-banner {
+  background-position: 0px 0px;
+  display: inline-block;
+  width: 936px;
+  height: 280px;
+  display: block;
+  margin: 0 auto;
+}
+.observer-black-button-l {
+  background-position: left -425px;
+}
+.observer-black-button-r {
+  background-position: right -424px;
+}
+.observer-button-l {
+  background-position: left -360px;
+}
+.observer-button-r {
+  background-position: right -358px;
+}
+.observer-input-bg {
+  background-position: 0px -535px;
+  display: inline-block;
+  width: 223px;
+  height: 42px;
+}
+.observer-error {
+  background-position: -367px -688px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.observer-success {
+  background-position: -329px -688px;
+  display: inline-block;
+  float: left;
+  height: 18px;
+  width: 17px;
+}
+.observer-line {
+  background-position: 67px -319px;
+}
+.observer-textarea-bg {
+  background-position: 0px -668px;
+  display: inline-block;
+  width: 223px;
+  height: 122px;
+}
+.observer-tip {
+  background-position: -356px -535px;
+  display: inline-block;
+  width: 183px;
+  height: 42px;
+}
+.observer-loading {
+  background-image: url("images/observer/loading_b.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  height: px;
+  right: -30px;
+  top: 0;
+  position: absolute;
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.observer .icons {
+  background-image: url(images/observer/sprite.png);
+  background-repeat: no-repeat;
+  text-indent: -999px;
+}
+body.observer {
+  background-image: url(images/observer/observer-bg1.png);
+  background-repeat: repeat;
+}
+body.observer #main {
+  width: 100%;
+}
+body.observer #container {
+  background: none;
+  line-height: normal;
+}
+body.observer .observer-box .banner-box {
+  margin: 0 auto;
+  width: 990px;
+}
+body.observer .observer-box .list-box {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 990px;
+}
+body.observer .observer-box .list-box ul {
+  overflow: hidden;
+  margin: 0;
+}
+body.observer .observer-box .list-box ul li {
+  float: left;
+  margin-right: 15px;
+  width: 320px;
+  height: 347px;
+  background-position: 0 -707px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+body.observer .observer-box .list-box ul li:last-child {
+  margin-right: 0;
+}
+body.observer .observer-box .list-box ul li.on {
+  background-position: 0 0;
+}
+body.observer .observer-box .list-box ul li.on img {
+  display: block;
+}
+body.observer .observer-box .list-box ul li.li-1 {
+  background-image: url(images/observer/li-1.png);
+}
+body.observer .observer-box .list-box ul li.li-2 {
+  background-image: url(images/observer/li-2.png);
+}
+body.observer .observer-box .list-box ul li.li-3 {
+  background-image: url(images/observer/li-3.png);
+}
+body.observer .observer-box .text-box {
+  margin: 0 auto 50px;
+  position: relative;
+  width: 926px;
+  background-image: url(images/observer/observer-bg2-body.png);
+  background-repeat: repeat-y;
+  padding: 35px 33px;
+}
+body.observer .observer-box .text-box .text-box-top {
+  height: 10px;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background-image: url(images/observer/observer-bg2.png);
+}
+body.observer .observer-box .text-box .text-box-bottom {
+  height: 10px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  background-image: url(images/observer/observer-bg2.png);
+  background-position: bottom center;
+}
+body.observer .observer-box .text-box ul {
+  overflow: hidden;
+}
+body.observer .observer-box .text-box ul li {
+  float: left;
+  width: 900px;
+}
+body.observer .observer-box .text-box ul li#about_1_content {
+  display: block;
+}
+body.observer .observer-box .text-box ul li#about_2_content {
+  display: none;
+}
+body.observer .observer-box .text-box ul li#about_3_content {
+  display: none;
+}
+body.observer .observer-box .text-box ul li .des {
+  color: #f3f3f3;
+}
+body.observer .observer-box .text-box ul li .des .title {
+  font-size: 14px;
+  line-height: 24px;
+}
+body.observer .observer-box .text-box ul li .des .title span {
+  line-height: 26px;
+  padding: 0 10px;
+}
+body.observer .observer-box .text-box ul li .des .content {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+body.observer .observer-box .line-box {
+  height: 4px;
+  margin-bottom: 40px;
+  position: relative;
+  text-indent: 0;
+  background-repeat: repeat-x;
+}
+body.observer .observer-box .line-box span {
+  font-size: 14px;
+  color: #dddddd;
+  background-color: #2A2A2A;
+  border-radius: 5px 5px 5px 5px;
+  left: 0;
+  margin: 0 auto;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -12px;
+  width: 230px;
+}
+body.observer .observer-box .line-box span a {
+  color: #7cc576;
+}
+body.observer .observer-box .line-box span.success {
+  text-shadow: 1px 1px 1px #000000;
+  background-color: #2A2A2A;
+  border-radius: 5px 5px 5px 5px;
+  color: #7cc576;
+  float: left;
+  left: 0;
+  margin: 0 auto;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -12px;
+  width: 450px;
+}
+body.observer .observer-box .form-box {
+  border-top: 1px solid #5b5b5b;
+  background-image: url(images/observer/observer-bg4.png);
+  position: relative;
+  padding: 30px 30px 10px;
+}
+body.observer .observer-box .form-box .form-box-t {
+  left: 0;
+  height: 50px;
+  background-image: url(images/observer/observer-bg3.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body.observer .observer-box .form-box .form-box-b {
+  left: 0;
+  height: 30px;
+  background-image: url(images/observer/observer-bg5.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+body.observer .observer-box .form-box form {
+  margin: 0 auto;
+  width: 990px;
+  position: relative;
+  z-index: 999;
+  width: 610px;
+  overflow: hidden;
+}
+body.observer .observer-box .form-box form .control-group {
+  float: left;
+  margin-right: 80px;
+}
+body.observer .observer-box .form-box form label {
+  color: #aaaaaa;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #000000;
+}
+body.observer .observer-box .form-box form label span {
+  font-size: 12px;
+}
+body.observer .observer-box .form-box form label.checkbox {
+  display: block;
+  font-size: 12px;
+  margin: 10px auto 15px;
+  overflow: hidden;
+  width: 230px;
+}
+body.observer .observer-box .form-box form .controls {
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+body.observer .observer-box .form-box form .controls input {
+  outline: none;
+  text-shadow: 1px 1px 1px #000000;
+  background-color: transparent;
+  background-position: 0 -535px;
+  border: medium none;
+  color: #dddddd;
+  display: inline-block;
+  height: 20px;
+  padding: 15px 10px 7px;
+  text-indent: 0;
+  width: 204px;
+}
+body.observer .observer-box .form-box form .controls textarea {
+  outline: none;
+  text-shadow: 1px 1px 1px #000000;
+  background-color: transparent;
+  background-position: 0 -672px;
+  border: medium none;
+  color: #dddddd;
+  display: inline-block;
+  height: 100px;
+  padding: 15px 10px 10px;
+  text-indent: 0;
+  width: 204px;
+}
+body.observer .observer-box .form-box form .controls button[type="submit"] {
+  position: relative;
+  background-color: transparent;
+  border: medium none;
+  text-indent: 0;
+  margin: 0 auto;
+  display: block;
+  width: 126px;
+}
+body.observer .observer-box .form-box form .controls button[type="submit"] span {
+  text-shadow: 1px 1px 1px #000000;
+  color: #FFFFFF;
+  display: block;
+  height: 13px;
+  line-height: 13px;
+  padding: 9px;
+  text-align: center;
+  text-indent: 0;
+  width: 106px;
+}
+body.observer .observer-box .form-box form .submit {
+  display: inline-block;
+  text-align: center;
+  width: 530px;
+}
+body.observer .observer-box .form-box form .submit input {
+  float: left;
+  height: 16px;
+  margin-right: 0;
+  width: 16px;
+}
+body.observer .observer-box .form-box form .submit span {
+  text-shadow: 1px 1px 1px #000000;
+}
+body.observer .observer-box .form-box form .observer-message {
+  box-shadow: 1px 1px 1px #222222 inset;
+  width: 200px;
+  color: #d04c49;
+  display: none;
+  overflow: hidden;
+  background-color: #292929;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0 auto;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+body.observer .observer-box .form-box form .observer-message i {
+  float: left;
+  margin-right: 5px;
+}
+body.observer .observer-box .form-box form .observer-message span {
+  float: left;
+}
+body.observer #footer .container {
+  border: none;
+}
+body.observer #footer .container .footer-title {
+  color: #999;
+}

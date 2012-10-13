@@ -1,6 +1,6 @@
 <MKM version="2.0" imageFileUrl="file:///Users/hzlzh/Project/hzlzh/geekpark.net/geek-observer/Design/%E4%BA%A7%E5%93%81%E8%A7%82%E5%AF%9F%E5%AE%B6%20v4.psd">
   <Marks>
-    <LengthMark direction="3" color="16711680" length="40" x="255" y="655"/>
+    <LengthMark direction="3" color="16711680" length="21" x="370" y="674"/>
     <LengthMark direction="12" color="16711680" length="15" x="530" y="351"/>
     <LengthMark direction="12" color="16711680" length="320" x="210" y="491"/>
     <LengthMark direction="3" color="16711680" length="260" x="327" y="324"/>
@@ -20,5 +20,8 @@
     <LengthMark direction="3" color="16711680" length="27" x="709" y="1509"/>
     <LengthMark direction="3" color="16711680" length="25" x="591" y="1535"/>
     <LengthMark direction="3" color="16711680" length="50" x="594" y="1589"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3912009" offsetX="25" offsetY="10" x="543" y="733"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3815994" offsetX="25" offsetY="10" x="874" y="1562"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="6908265" offsetX="25" offsetY="10" x="705" y="1574"/>
   </Marks>
 </MKM>

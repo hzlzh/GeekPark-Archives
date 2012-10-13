@@ -7,7 +7,7 @@
     %meta{:name => "description", :content  => "GeekPark 产品观察家"}
     %link{:rel => "shortcut icon", :href  => "favicon.ico"}
     %link{:rel => "stylesheet", :href  => "css/style.css"}
-    %link{:rel => "stylesheet", :href  => "css/observer.css"}
+    %link{:rel => "stylesheet", :href  => "css/observer-style.css"}
     %script{:src  => "js/jquery-1.8.1.min.js"}
     %script{:src  => "js/modernizr.js"}
   %body.observer.is-login#main
@@ -18,69 +18,78 @@
       .list-box
         %ul
           %li
-            %img{:src => "css/images/li-1.png"}
+            %img{:src => "css/images/observer/li-1-c.png"}
           %li
-            %img{:src => "css/images/li-1.png"}
+            %img{:src => "css/images/observer/li-2-c.png"}
           %li
-            %img{:src => "css/images/li-1.png"}
+            %img{:src => "css/images/observer/li-3-c.png"}
       .text-box
         %ul
           %li
             .des
-              .title 每一个创新产品的光辉都应得到荣耀，而您可能就是把荣誉带给产品的那个人！极客公园需要一批靠谱的产品观察家。
-              .content 极客公园是一个面向互联网产品人的社区，无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；我们也不写一个人是谁，因为地球上有维基百科。极客公园关注的，是产品背后的“为什么”。
+              .title
+                %span 每一个创新产品的光辉都应得到荣耀，而您可能就是把荣誉带给产品的那个人！<br/>
+                %span 极客公园需要一批靠谱的产品观察家。
+              .content 极客公园是一个面向互联网产品人的社区，<br />无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。<br />极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；<br />我们也不写一个人是谁，因为地球上有维基百科。<br />极客公园关注的，是产品背后的“为什么”。
           %li
             .des
               .title 每一个创新产品的光辉都应得到荣耀，而您可能就是把荣誉带给产品的那个人！极客公园需要一批靠谱的产品观察家。
-              .content 极客公园是一个面向互联网产品人的社区，无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；我们也不写一个人是谁，因为地球上有维基百科。极客公园关注的，是产品背后的“为什么”。
+              .content 极客公园是一个面向互联网产品人的社区，<br />无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。<br />极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；<br />我们也不写一个人是谁，因为地球上有维基百科。<br />极客公园关注的，是产品背后的“为什么”。
           %li
             .des
               .title 每一个创新产品的光辉都应得到荣耀，而您可能就是把荣誉带给产品的那个人！极客公园需要一批靠谱的产品观察家。
-              .content 极客公园是一个面向互联网产品人的社区，无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；我们也不写一个人是谁，因为地球上有维基百科。极客公园关注的，是产品背后的“为什么”。
+              .content 极客公园是一个面向互联网产品人的社区，<br />无论是举办极客活动、制作极客广播，还是撰写原创极客观察，我们的目的只有一个：发现产品的价值。<br />极客公园从来不写一个产品是什么，因为很多网站已经在做这件事，我们不愿意制造重复信息；<br />我们也不写一个人是谁，因为地球上有维基百科。<br />极客公园关注的，是产品背后的“为什么”。
       .form-box
+        .form-box-t
         %form
           .control-group
             %label 网络常用ID:
             .controls
-              <input type="text" name="pen_name" value="" />
+              <input class="icons" type="text" name="pen_name" value="" />
+          .control-group
+            %label
+              参与过的产品:
+              %span (以英文逗号分隔)
+            .controls
+              <input class="icons" type="text" name="product" value="<?php echo $user_product?>" />
           .control-group
             %label 姓名:
             .controls
-              <input type="text" name="real_name" value="<?php echo $user_data->real_name?>" />
-          .control-group
-            %label 个人主页/博客:
-            .controls
-              <input type="text" name="blog" value="<?php echo $user_data->blog?>" />
-          .control-group
-            %label 公司:
-            .controls
-              <input type="text" name="company" value="<?php echo $user_data->company?>" />
-          .control-group
-            %label 职位:
-            .controls
-              <input type="text" name="position" value="<?php echo $user_data->position?>" />
-          .control-group
-            %label 参与过的产品:
-            .controls
-              <input type="text" name="product" value="<?php echo $user_product?>" />
-          .control-group
-            %label 微博URL:
-            .controls
-              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
-          .control-group
-            %label 微博URL:
-            .controls
-              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+              <input class="icons" type="text" name="real_name" value="<?php echo $user_data->real_name?>" />
           .control-group
             %label 手机:
             .controls
-              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+              <input class="icons" type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
           .control-group
-            %label 个人介绍:
+            %label
+              个人主页/博客:
+              %span (非必填)
             .controls
-              <input type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+              <input class="icons" type="text" name="blog" value="<?php echo $user_data->blog?>" />
           .control-group
+            %label 微博URL:
             .controls
-              <button class="btn" type="submit">Submit</button>
+              <input class="icons" type="text" name="weibo_url" value="<?php echo $user_data->weibo_url?>" />
+          .control-group
+            %label 公司:
+            .controls
+              <input class="icons" type="text" name="company" value="<?php echo $user_data->company?>" />
+            %label 职位:
+            .controls
+              <input class="icons" type="text" name="position" value="<?php echo $user_data->position?>" />
+          .control-group
+            %label
+              个人介绍:
+              %span (建议注明您的得意之作)
+            .controls
+              <textarea class="icons" type="text" name="weibo_url" value="" /><?php echo $user_data->weibo_url?></textarea>
+          .control-group.submit
+            .controls
+              <label class="checkbox">
+              <input type="checkbox">我接受极客公园产品观察家的相关协议
+              </label>
+              <div class="observer-message"><i class="observer-error icons"></i>错误提示</div>
+              <button class="btn icons observer-button-r" type="submit"><span class="observer-button-l icons">提 交</span></button>
+        .form-box-b
     %footer.footer
-      .copyrightCopyright © 2009-2012 北京文德致远文化传播有限公司 | 京ICP备09035963号   京公网安备110105001682号
+      .copyright Copyright © 2009-2012 北京文德致远文化传播有限公司 | 京ICP备09035963号   京公网安备110105001682号
