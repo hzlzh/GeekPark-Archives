@@ -63,11 +63,12 @@ a,a:active,a:visited{}
 
 
 .icon,.interview article ul li ul li{background-image:url(images/job-script.png);background-repeat:no-repeat;}
-.interview{margin:0 auto;width:900px;background:url("images/job-bg-wood.png") repeat scroll 0 0 #fff;font-size:13px;line-height:20px;color:#666;text-shadow:1px 1px 1px #FFFFFF;}
+.interview{margin:0 auto;width:900px;background:url("images/job-bg-wood.png") repeat scroll 0 0 transparent;font-size:13px;line-height:22px;color:#666;text-shadow:1px 1px 1px #FFFFFF;}
 .interview header{margin-top:70px;}
 .interview header .title{background:url("images/job-bg-menu.png") repeat-x scroll 0 0 transparent;border-radius:5px 5px 0 0;box-shadow:0 2px 5px rgba(0,0,0,0.8);color:#FFFFFF;font-size:23px;height:50px;letter-spacing:9px;line-height:42px;text-align:center;text-shadow:1px 1px 1px #000000;}
 .interview article{position:relative;background:url("images/job-bg-body.png") repeat scroll 12px 0 transparent;box-shadow:0 2px 5px rgba(0,0,0,0.8);}
-.interview article .banner{margin:0 auto;display: block;}
+.interview article .banner{margin:0 auto;display: block;height: 351px;}
+.apprentice article .banner{height: 260px;}
 .interview article .edge{height:20px;background:url("images/job-bg-edge.png") repeat-y scroll 0 12px transparent;}
 .interview article .content{margin:5px auto 0;padding-right:50px;padding-bottom:70px;width:700px;}
 .interview article ul{list-style:none outside none;margin:0;padding:0;}
@@ -77,7 +78,7 @@ a,a:active,a:visited{}
 .interview article ul li .text{}
 .interview article ul li p{margin-bottom: 20px;margin-left: 40px;width: 660px;}
 .interview article ul li ul{margin-left: 30px;}
-.interview article ul li ul li{margin-bottom:0px;background-position:-169px -362px;padding-left:30px;}
+.interview article ul li ul li{margin-bottom:5px;background-position:-169px -362px;padding-left:30px;}
 .interview article .wtf{background-position:-197px 0;height:85px;position:absolute;right:0;text-indent:-9999px;top:770px;width:52px;}
 .interview article .pencil{background-position:-50px -130px;border:0 none;bottom:0;height:200px;margin-bottom:-30px;margin-right:-30px;position:absolute;right:0;width:300px;}
 .interview a{color:#999;}
@@ -85,5 +86,8 @@ a,a:active,a:visited{}
 .interview #qrcode{cursor:pointer;}
 .interview #qrcode img{display:none;margin-left:10px;position:absolute;}
 .interview footer{}
+.interview strong{margin-right: 5px;background: none repeat scroll 0 0 #5bc953;border-radius: 5px 5px 5px 5px;color: #FFFFFF;font-weight: normal;padding: 2px 4px;text-shadow: 0 0 0;}
 .interview footer .copyright{height:40px;margin:40px auto;text-indent:-9999px;width:190px;display:block;}
-@media screen and (max-width:700px){.interview{margin:0 auto;width:98%;padding:0 1%;}.interview article ul li p {width:92%;}.interview article .content{width:96%;}.interview article .banner{width:100%;}}
+@media screen and (max-width:700px){.interview{margin:0 auto;width:98%;padding:0 1%;}.interview article ul li p {width:90%;padding: 0 5% 1% 0;}.interview article .pencil{display: none;}.interview article .content{width:96%;}.interview article .banner{width:100%;height: auto;}}
+@media screen and (max-width:900px){body{font-size: 16px!important;line-height: 24px !important;}}
+
