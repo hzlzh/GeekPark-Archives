@@ -1,0 +1,93 @@
+/* HTML5 ✰ Boilerplate */
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,
+small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{content:"";content:none;}
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}
+del{text-decoration:line-through;}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+input,select{vertical-align:middle;}
+body{font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti !important;}
+body{font:13px/1.231 sans-serif;*font-size:small;}
+select,input,textarea,button{font:99% sans-serif;}
+pre,code,kbd,samp{font-family:monospace,sans-serif;}
+html{overflow-y:auto;}
+a:hover,a:active{outline:none;}
+ul,ol{margin-left:2em;}
+ol{list-style-type:decimal;}
+nav ul,nav li{margin:0;list-style:none;list-style-image:none;}
+small{font-size:85%;font-size:12px;}
+strong,th{font-weight:bold;}
+td{vertical-align:top;}
+sub,sup{font-size:75%;line-height:0;position:relative;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;padding:15px;}
+textarea{overflow:auto;}
+.ie6 legend,.ie7 legend{margin-left:-7px;}
+input[type="radio"]{vertical-align:text-bottom;}
+input[type="checkbox"]{vertical-align:bottom;}
+.ie7 input[type="checkbox"]{vertical-align:baseline;}
+.ie6 input{vertical-align:text-bottom;}
+label,input[type="button"],input[type="submit"],input[type="image"],button{cursor:pointer;}
+button,input,select,textarea{margin:0;}
+input:valid,textarea:valid{}
+input:invalid,textarea:invalid{border-radius:1px;-moz-box-shadow:0px 0px 5px red;-webkit-box-shadow:0px 0px 5px red;box-shadow:0px 0px 5px red;}
+.no-boxshadow input:invalid,.no-boxshadow textarea:invalid{background-color:#f0dddd;}
+::-moz-selection{background:#c3e99e;text-shadow:none;}
+.seed .cast-wall .entry ::-moz-selection{background:none repeat scroll 0% 0% #fff;text-shadow:none;}
+::selection{background:#c3e99e;text-shadow:none;}
+.seed .cast-wall .entry ::selection{background:none repeat scroll 0% 0% #fff;text-shadow:none;}
+a:link{-webkit-tap-highlight-color:#FF5E99;}
+button{width:auto;overflow:visible;}
+.ie7 img{-ms-interpolation-mode:bicubic;}
+body,select,input,textarea{color:#444;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;}
+a,a:active,a:visited{}
+.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;visibility:hidden;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+
+.icon,.interview article ul li ul li{background-image:url(images/job-script.png);background-repeat:no-repeat;}
+.interview{margin:0 auto;width:900px;background:url("images/job-bg-wood.png") repeat scroll 0 0 transparent;font-size:13px;line-height:22px;color:#666;text-shadow:1px 1px 1px #FFFFFF;}
+.interview header{margin-top:70px;}
+.interview header .title{background:url("images/job-bg-menu.png") repeat-x scroll 0 0 transparent;border-radius:5px 5px 0 0;box-shadow:0 2px 5px rgba(0,0,0,0.8);color:#FFFFFF;font-size:23px;height:50px;letter-spacing:9px;line-height:42px;text-align:center;text-shadow:1px 1px 1px #000000;}
+.interview article{position:relative;background:url("images/job-bg-body.png") repeat scroll 12px 0 transparent;box-shadow:0 2px 5px rgba(0,0,0,0.8);}
+.interview article .banner{margin:0 auto;display: block;height: 351px;}
+.apprentice article .banner{height: 260px;}
+.interview article .edge{height:20px;background:url("images/job-bg-edge.png") repeat-y scroll 0 12px transparent;}
+.interview article .content{margin:5px auto 0;padding-right:50px;padding-bottom:70px;width:700px;}
+.interview article ul{list-style:none outside none;margin:0;padding:0;}
+.interview article ul li{margin-bottom:20px;}
+.interview article ul li h2{margin-bottom:15px;background-position:-47px -396px;color:#333;line-height:25px;padding-left:40px;}
+.interview article ul li h2.apply{background-position:8px -52px;height:60px;line-height:60px;width:129px;}
+.interview article ul li .text{}
+.interview article ul li p{margin-bottom: 20px;margin-left: 40px;width: 660px;}
+.interview article ul li ul{margin-left: 30px;}
+.interview article ul li ul li{margin-bottom:5px;background-position:-169px -362px;padding-left:30px;}
+.interview article .wtf{background-position:-197px 0;height:85px;position:absolute;right:0;text-indent:-9999px;top:770px;width:52px;}
+.interview article .pencil{background-position:-50px -130px;border:0 none;bottom:0;height:200px;margin-bottom:-30px;margin-right:-30px;position:absolute;right:0;width:300px;}
+.interview a{color:#999;}
+.interview a:hover{color:#784d13;}
+.interview #qrcode{cursor:pointer;}
+.interview #qrcode img{display:none;margin-left:10px;position:absolute;}
+.interview footer{}
+.interview strong{margin-right: 5px;background: none repeat scroll 0 0 #5bc953;border-radius: 5px 5px 5px 5px;color: #FFFFFF;font-weight: normal;padding: 2px 4px;text-shadow: 0 0 0;}
+.interview footer .copyright{height:40px;margin:40px auto;text-indent:-9999px;width:190px;display:block;}
+@media screen and (max-width:700px){.interview{margin:0 auto;width:98%;padding:0 1%;}.interview article ul li p {width:90%;padding: 0 5% 1% 0;}.interview article .pencil{display: none;}.interview article .content{width:96%;}.interview article .banner{width:100%;height: auto;}}
+@media screen and (max-width:900px){body{font-size: 16px!important;line-height: 24px !important;}}
+
