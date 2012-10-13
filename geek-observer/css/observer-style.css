@@ -399,6 +399,9 @@ body.observer .observer-box .list-box ul li {
 body.observer .observer-box .list-box ul li:last-child {
   margin-right: 0;
 }
+body.observer .observer-box .list-box ul li img {
+  display: none;
+}
 body.observer .observer-box .list-box ul li.on {
   background-position: 0 0;
 }
